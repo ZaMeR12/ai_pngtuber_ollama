@@ -47,9 +47,9 @@ Terminal command to run **Ollama** as server:
 >
 > Second, install python if it's not already done. The recommended version is Python 3.12.2. Also, be sure to install pip too when you install Python. 
 >
-> Third, install all the dependencies with pip. You can use the [./setup/setup.bat](./setup/setup.bat) to install all the dependencies.
+> Third, install all the dependencies with pip. You can use [./setup/setup.bat](./setup/setup.bat) (**Windows**) or [./setup/setup.sh](./setup/setup.sh) (**Mac/Linux**) to install all the dependencies.
 >
-> Fourth, run the **app.py** script in a terminal or use the **app.exe** in the release section.
+> Fourth, run the **app.py** (**Linux/Windows/Mac**) script in a terminal or use the **app.exe** (**Windows Only**) in the release section.
 >
 > P.S.: There is for now only user's messages by terminal input, but I will try to add a Twitch integration in the future.
 
