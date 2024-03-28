@@ -28,7 +28,7 @@
 
 ## How to install Ollama and what model?
 
-> This app use as default the model of **llama2** who is easily downloable by **Ollama**.
+> This app use as default the model of **llama2** who is easily downlodable by **Ollama**.
 
 > To download and install **Ollama** there is a great video to explain how **Ollama** is used for and how to install it. **[Video Here](https://www.youtube.com/watch?v=WxYC9-hBM_g)** P.S.: You don't need necessary the fine tuning or custom models. Just the first part of the video explain the necessary.
 
@@ -67,7 +67,7 @@ Terminal command to run **Ollama** as server:
 >
 > ***P.S.: I recommend also to colorize the background of your images to be able to make it transparent in OBS.***
 > 
-> ***P.S.2: The default avatar if from [PngTuber Maker](https://store.steampowered.com/app/2266940/PngTuber_Maker/), so it's not recommend to use it for stream or recording.***
+> ***P.S.2: The default avatar if from [Avataaars](https://getavataaars.com/), so it's not recommend to use it for stream or recording.***
 
 ## How to have substitles of the PngTuber's speech on my stream?
 

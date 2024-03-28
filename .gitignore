@@ -3,6 +3,8 @@
 
 dev/
 
+*.exe
+*.zip
 ### AppBuilder ###
 .ab/
 
