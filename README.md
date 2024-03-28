@@ -9,6 +9,7 @@
   - [How to install Ollama and what model?](#how-to-install-ollama-and-what-model)
   - [How to run Ollama as server?](#how-to-run-ollama-as-server)
   - [How to setup this app?](#how-to-setup-this-app)
+  - [How to close the app?](#how-to-close-the-app)
   - [How to change the avatar of the PngTuber?](#how-to-change-the-avatar-of-the-pngtuber)
   - [How to have substitles of the PngTuber's speech on my stream?](#how-to-have-substitles-of-the-pngtubers-speech-on-my-stream)
   - [How to change the lore of the PngTuber?](#how-to-change-the-lore-of-the-pngtuber)
@@ -51,6 +52,14 @@ Terminal command to run **Ollama** as server:
 > Fourth, run the **app.py** script in a terminal or use the **app.exe** in the release section.
 >
 > P.S.: There is for now only user's messages by terminal input, but I will try to add a Twitch integration in the future.
+
+
+## How to close the app?
+
+> You can close the app in 2 ways:
+>  
+> - Doing CTR+C in the terminal window.
+> - CLicking on the X bouton the the *Avatar* window.
 
 ## How to change the avatar of the PngTuber?
 
