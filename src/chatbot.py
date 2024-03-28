@@ -24,8 +24,10 @@ lore:str = "" #This one have to be edit in the lore.tx file.
 client:Client = Client(host = OLLAMA_SERVER)
 
 
+def initialize()->None:
+    """Function that initialize the project and the chatbot.
+    """
 
-def initialize():
     if (CHAT_MODEL != "" ):
         global lore
         try:
@@ -40,8 +42,16 @@ def initialize():
     pygame.mixer.init()
     pygame.mixer.set_num_channels(8)
         
-
 def generationPrompt(user_message:str)->str:
+    """Function that generate a prompt from the chatbot.
+
+    Args:
+        user_message (str): The user message that discuss with the chatbot.
+
+    Returns:
+        str: The answer of the chatbot
+    """
+
     try:
         user_message_translate:str = translate_user(user_message)
         print(user_message_translate)

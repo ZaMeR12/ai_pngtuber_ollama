@@ -15,7 +15,10 @@ TALK_IMG:str = str(Path(str(Path().resolve())+str(os.getenv('TALK_IMG'))))
 avatar_mute = cv2.imread(MUTE_IMG)
 avatar_talk = cv2.imread(TALK_IMG)
 
-def userInput():
+def userInput()->None:
+    """The function that use terminal input to communicate with the chatbot.
+    """
+
     cv2.imshow("Avatar",avatar_mute)
     cv2.waitKey(20)
     user_message:str = input()
@@ -24,6 +27,7 @@ def userInput():
     print(response)
     text_to_speech(response)
     talking()
+
 
 initialize()
 cv2.imshow("Avatar",avatar_mute)

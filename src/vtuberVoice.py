@@ -47,19 +47,28 @@ data = {
   }
 }
 
-def text_to_speech(ai_message:str):
-    if (TTS):
-        output = gTTS(text=ai_message, lang = GTTS_LANG, slow = False)
-        output.save(PATH_AUDIO_FILE)
-    else :
-      data["text"] = ai_message
-      response = requests.post(str(URL_ELEVENLAB+VOICE_ID), json=data, headers=headers)
-      with open(PATH_AUDIO_FILE, 'wb') as f:
-          for chunk in response.iter_content(chunk_size=CHUNK_SIZE):
-              if chunk:
-                  f.write(chunk)
+def text_to_speech(ai_message:str)->None:
+  """Generate the voice file from the txt send in parameter.
+
+  Args:
+      ai_message (str): The message of the chatbot
+  """
+
+  if (TTS):
+      output = gTTS(text=ai_message, lang = GTTS_LANG, slow = False)
+      output.save(PATH_AUDIO_FILE)
+  else :
+    data["text"] = ai_message
+    response = requests.post(str(URL_ELEVENLAB+VOICE_ID), json=data, headers=headers)
+    with open(PATH_AUDIO_FILE, 'wb') as f:
+        for chunk in response.iter_content(chunk_size=CHUNK_SIZE):
+            if chunk:
+                f.write(chunk)
   
-def talking():
+def talking()->None:
+  """Play the audio of the file output.mp3 and manage the avatar animation.
+  """
+
   voice = pygame.mixer.Channel(5)
 
   sound = pygame.mixer.Sound(PATH_AUDIO_FILE)
