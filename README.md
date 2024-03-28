@@ -46,7 +46,7 @@ Terminal command to run **Ollama** as server:
 >
 > Second, install python if it's not already done. The recommended version is Python 3.12.2. Also, be sure to install pip too when you install Python. 
 >
-> Third, install all the dependencies with pip.
+> Third, install all the dependencies with pip. You can use the [./setup/setup.bat](./setup/setup.bat) to install all the dependencies.
 >
 > Fourth, run the **app.py** script in a terminal or use the **app.exe** in the release section.
 >

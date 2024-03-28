@@ -2,7 +2,6 @@ from deep_translator import GoogleTranslator
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-import sys
 
 dotenv_path_translator = Path(str(Path().resolve())+'/env/translator.env')
 load_dotenv(dotenv_path=dotenv_path_translator)
